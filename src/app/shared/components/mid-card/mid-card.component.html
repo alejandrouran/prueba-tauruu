@@ -1,0 +1,52 @@
+<div class="container">
+
+  <section class="card">
+    <h1 class="card__title">Mouth Wash</h1>
+    <p-card [style]="{ width: '360px' }">
+      <ng-template pTemplate="header">
+        <img class="img"
+        ngSrc="/assets/images/splash.png"
+
+        width="20"
+        height="20"
+      />
+      </ng-template>
+      <p class="card__description">
+          {{ description }}
+      </p>
+      <ng-template pTemplate="footer">
+          <div class="flex gap-3 mt-1">
+            <button class="card__btn">Buy Now</button>
+          </div>
+      </ng-template>
+    </p-card>
+
+    </section>
+
+
+    <section class="card_two">
+      <h1 class="card_two__title_two">Tooth Brush</h1>
+      <p-card [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+          <img class="img"
+          ngSrc="/assets/images/splash.png"
+
+          width="50"
+          height="50"
+        />
+        </ng-template>
+        <p class="card_two__description_two">
+            {{ description }}
+        </p>
+        <ng-template pTemplate="footer">
+            <div class="flex gap-3 mt-1">
+              <button class="card_two__btn_two">Buy Now</button>
+            </div>
+        </ng-template>
+      </p-card>
+
+      </section>
+
+</div>
+
+

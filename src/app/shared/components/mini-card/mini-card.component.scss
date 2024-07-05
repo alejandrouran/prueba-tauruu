@@ -1,0 +1,94 @@
+@import '../../../../scss/vars';
+
+@mixin card {
+      display: flex;
+      border-radius: 10px;
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      margin-top: 50px;
+      align-items: center;
+      justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+    &__card {
+      @include card;
+      background-color: $background-color-min-one;
+
+    img {
+      margin-left: 35px;
+    }
+  }
+
+  &__card_one {
+    @include card;
+    background-color: $background-color-min-two;
+
+  }
+
+  &__card_two {
+    @include card;
+    background-color: $background-color-min-three;
+  }
+
+  &__card_three {
+    @include card;
+    background-color: $background-color-min-four;
+
+    img {
+      margin-left: 35px;
+    }
+  }
+
+  p {
+    font-weight: 700;
+    color: $font-color-card;
+    font-family: $font-family;
+  }
+
+  .img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+@media (min-width: 681px) {
+  .container app-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container app-card {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    gap: 1px;
+  }
+
+  .container__card {
+    width: 200px;
+    height: 160px;
+    flex: 1 1 auto;
+
+  }
+  .container__card_one {
+    width: 200px;
+    height: 160px;
+    flex: 1 1 auto;
+  }
+  .container__card_two {
+    width: 200px;
+    height: 160px;
+    flex: 1 1 auto;
+  }
+  .container__card_three {
+    width: 200px;
+    height: 160px;
+    flex: 1 1 auto;
+  }
+}

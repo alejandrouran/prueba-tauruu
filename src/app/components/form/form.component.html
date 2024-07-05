@@ -1,0 +1,183 @@
+<app-menu></app-menu>
+
+<div class="contenedor-principal">
+  <div class="contenedor-formularios">
+    <div class="caja-uno">
+      <h1>Product management</h1>
+  <div class="card">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <label class="label">Name</label>
+    </form>
+    <input class="input" formControlName="name" type="text" placeholder="Name"/>
+  </div>
+
+  <div class="card">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <label class="label">Imagen</label>
+    </form>
+    <input class="input" formControlName="image" type="text" placeholder="Name" formControlName="name" />
+  </div>
+
+  <div class="card">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <label class="label">Price</label>
+    </form>
+    <input class="input" formControlName="price" type="number" placeholder="Name" formControlName="name" />
+  </div>
+
+  <div class="check">
+
+    <label class="custom-checkbox">
+      <input  type="checkbox" formControlName="discount" id="custom-checkbox">
+      <span class="checkmark"></span>
+    </label>
+  Does this product have a discount?
+
+  </div>
+
+  <div class="check">
+
+    <label class="custom-checkbox">
+      <input  type="checkbox" formControlName="isFeatured" id="custom-checkbox">
+      <span class="checkmark">
+      </span>
+    </label>
+    Do you want to show this product in the main section?
+
+  </div>
+
+
+  <div class="card">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <label class="label">Discount</label>
+    </form>
+    <input class="input" formControlName="discountValue" type="number" placeholder="Name" formControlName="name" />
+  </div>
+
+  <div>
+    <button class="btn" type="submit">Save Product</button>
+  </div>
+  <div>
+    @for (product of products; track product){
+      <div>{{ product.name }}</div>
+      <div>{{ product.price }}</div>
+      <button (click)="onEdit(product)">Edit</button>
+      <button (click)="product.id ? onDelete(product.id):null">Delete</button>
+    }
+  </div>
+
+    </div>
+
+    <div class="caja-dos">
+
+
+        <div class="search-container">
+          <button class="bt">
+            <i class="pi pi-search"></i>
+          </button>
+          <input  type="text" placeholder="Global Search" class="search-input">
+         </div>
+
+       <div class="items-one">
+         <ul>
+           <li><label class="custom-checkbox">
+             <input  type="checkbox" id="custom-checkbox">
+             <span class="checkmark">
+             </span>
+           </label></li>
+           <li>Code</li>
+           <li>Name</li>
+           <li>Image</li>
+           <li>Price</li>
+           <li>Discount</li>
+           <li>Actions</li>
+         </ul>
+
+       </div>
+
+       <div class="items">
+         <ul>
+           <li><label class="custom-checkbox">
+             <input  type="checkbox" id="custom-checkbox">
+             <span class="checkmark">
+             </span>
+           </label></li>
+           <li>Code</li>
+           <li>Name</li>
+           <li>Image</li>
+           <li>Price</li>
+           <li>Discount</li>
+           <li>Actions</li>
+         </ul>
+       </div>
+
+       <div class="items">
+         <ul>
+           <li><label class="custom-checkbox">
+             <input  type="checkbox" id="custom-checkbox">
+             <span class="checkmark">
+             </span>
+           </label></li>
+           <li>Code</li>
+           <li>Name</li>
+           <li>Image</li>
+           <li>Price</li>
+           <li>Discount</li>
+           <li>Actions</li>
+         </ul>
+       </div>
+
+       <div class="items">
+         <ul>
+           <li><label class="custom-checkbox">
+             <input  type="checkbox" id="custom-checkbox">
+             <span class="checkmark">
+             </span>
+           </label></li>
+           <li>Code</li>
+           <li>Name</li>
+           <li>Image</li>
+           <li>Price</li>
+           <li>Discount</li>
+           <li>Actions</li>
+         </ul>
+       </div>
+
+       <div class="items">
+         <ul>
+           <li><label class="custom-checkbox">
+             <input  type="checkbox" id="custom-checkbox">
+             <span class="checkmark">
+             </span>
+           </label></li>
+           <li>Code</li>
+           <li>Name</li>
+           <li>Image</li>
+           <li>Price</li>
+           <li>Discount</li>
+           <li>Actions</li>
+         </ul>
+       </div>
+
+       <div class="items">
+         <ul>
+           <li><label class="custom-checkbox">
+             <input  type="checkbox" id="custom-checkbox">
+             <span class="checkmark">
+             </span>
+           </label></li>
+           <li>Code</li>
+           <li>Name</li>
+           <li>Image</li>
+           <li>Price</li>
+           <li>Discount</li>
+           <li>Actions</li>
+         </ul>
+       </div>
+    </div>
+  </div>
+  <div class="footer"><app-footer></app-footer></div>
+</div>
+
+
+

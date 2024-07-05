@@ -1,0 +1,219 @@
+@import "primeicons/primeicons.css";
+@import '../../../scss/vars';
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.contenedor-principal {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedor-formularios {
+  margin-bottom: 40px;
+}
+
+.caja-uno {
+  width: 500px;
+}
+
+.caja-dos {
+  width: 700px;
+
+}
+
+.search-container {
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-right: 15px;
+}
+
+.contenedor-formularios {
+  width: 100%;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los contenedores se ajusten en una nueva línea */
+  gap: 16px;
+}
+
+.search-input {
+
+  border: none;
+  width: 200px;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+
+
+
+
+
+  // outline: none;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+.container {
+
+  width: 500px;
+  margin-left: 80px;
+
+  margin-top: 6px;
+}
+
+.bt {
+
+  // margin-top: 10px
+  border: none;
+  width: 50px;
+  height: 46px;
+  background-color: $background-color;
+  color: $font-color-t;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  border-left: 1px solid $color-border;
+
+}
+
+.input {
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  margin: 10px;
+
+}
+
+.label {
+  margin-left: 10px;
+  font-family: $font-family;
+  color: $font-color-card;
+}
+
+.check {
+  color: $font-color-card;
+  font-family: $font-family;
+  font-size: $font-size-paragraph-one;
+  margin: 10px;
+}
+
+.search-container {
+  width: 700px;
+  height: 80px;
+  background-color: $background-color-footer;
+  display: flex;
+  justify-content: end;
+}
+
+// .search-input {
+//   border-radius: 5px;
+//   width: 180px;
+//   margin-left: 330px;
+// }
+
+.items {
+  display: flex;
+
+  height: 70px;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+
+  align-items: center;
+  font-family: $font-family;
+  color: $background-color-footer;
+  font-weight: 400;
+
+  li {
+    margin: 20px;
+  }
+}
+
+.items-one {
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  background-color:  $background-color-footer;
+  height: 50px;
+  align-items: center;
+  font-family: $font-family;
+  color: $font-color-card;
+  font-weight: 400;
+
+  li {
+    margin: 20px;
+  }
+
+}
+
+.main {
+  display: flex;
+  background-color: blanchedalmond;
+}
+
+.card {
+  border: none;
+}
+
+
+.pi {
+  color: $font-color;
+  background-color: $background-color;
+
+}
+
+.btn {
+  width: 160px;
+  height: 46px;
+  background-color: $boton-color;
+  color: $font-color-t;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.input {
+  padding-left: 15px ;
+}
+.label {
+  margin-top: 10px;
+}
+
+@media (min-width: 681px) {
+  .contenedor-formularios app-card {
+    flex: 1 1 calc(50% - 20px);
+     /* Dos tarjetas por fila */
+     display: flex;
+     flex-direction: column;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .contenedor-formularios app-card {
+    flex: 1 1 calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+    box-sizing: border-box;
+    gap: 2px;
+
+     /* Cuatro tarjetas en una fila */
+  }
+  }

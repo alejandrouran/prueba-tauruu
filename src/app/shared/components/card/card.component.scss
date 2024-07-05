@@ -1,0 +1,89 @@
+@import "primeicons/primeicons.css";
+@import '../../../../scss/vars';
+
+.pi {
+  font-weight: 800;
+}
+
+.card {
+  // display: flex;
+  // border: 1px solid #bab4b4;
+  // border-radius: 10px;
+  // width: 350px;
+  // height: 440px;
+  // margin: 20px;
+
+  border: 1px solid #bab4b4;
+  border-radius: 10px;
+  width: 290px;
+  height: 440px;
+  margin: 20px;
+
+  .header {
+    &__img {
+      width: 250px;
+      height: 200px;
+      margin-left: 20px;
+      margin-top: 18px;
+    }
+  }
+
+  &__description {
+    margin-top: 50px;
+    text-align: center;
+    font-family: $font-family;
+    color: $font-color-card;
+    font-weight: 500;
+    width: 290px;
+  }
+
+  &__btn {
+    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    border: none;
+    background-color: $boton-color;
+    color: $background-color;
+    margin-left: 20px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+
+
+  // .header {
+  //   &__img {
+  //     width: 320px;
+  //     height: 200px;
+  //     margin-left: 20px;
+  //     margin-top: 18px;
+  //   }
+  // }
+
+  // &__description {
+  //   margin-top: 50px;
+  //   text-align: center;
+  //   font-family: $font-family;
+  //   color: $font-color-card;
+  //   font-weight: 500;
+  // }
+
+  &__price {
+    margin-left: 20px;
+    font-weight: 600;
+    color: $font-color-card;
+    font-size: $font-size-subtitle;
+  }
+
+  // &__btn {
+  //   border-radius: 10px;
+  //   width: 320px;
+  //   height: 45px;
+  //   border: none;
+  //   background-color: $boton-color;
+  //   color: $background-color;
+  //   margin-left: 20px;
+  //   font-weight: 800;
+  //   cursor: pointer;
+  // }
+}
